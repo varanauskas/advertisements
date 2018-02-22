@@ -23,7 +23,7 @@ class TrustProxies extends Middleware
         Request::HEADER_FORWARDED => null,
         Request::HEADER_CLIENT_IP => 'X_FORWARDED_FOR',
         Request::HEADER_CLIENT_HOST  => null,
-        RequestHEADER_CLIENT_PROTO => 'X_FORWARDED_PROTO',
+        Request::HEADER_CLIENT_PROTO => 'X_FORWARDED_PROTO',
         Request::HEADER_CLIENT_PORT  => 'X_FORWARDED_PORT',
     ];
 }
