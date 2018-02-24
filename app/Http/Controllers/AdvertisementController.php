@@ -63,7 +63,6 @@ class AdvertisementController extends Controller
      */
     public function show(Advertisement $advertisement)
     {
-        $this->authorize('view', $advertisement);
         return view('advertisements.show', compact('advertisement'));
     }
 

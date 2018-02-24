@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    {{ $user->username }}'s advertisments
+@endsection
+
 @section('content')
 <h1>{{ $user->username }}'s advertisments</h1>
 @foreach ($advertisements->chunk(3) as $chunk)

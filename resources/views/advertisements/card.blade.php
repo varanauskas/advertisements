@@ -1,5 +1,4 @@
 <div class="card advertisement">
-    
     <div class="card-body">
         <a href="{{ route('user.advertisements', $advertisement->user_id) }}"><h6 class="card-subtitle text-muted">{{ $advertisement->user->username }}</h6></a>
         <a href="{{ route('advertisements.show', $advertisement->id) }}"><h5 class="card-title">{{ str_limit($advertisement->title, 48) }}</h5></a>

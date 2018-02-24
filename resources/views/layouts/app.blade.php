@@ -6,8 +6,18 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    @hasSection('description')
+        <meta name="description" content="@yield('description')">
+    @endif
+    @stack('meta')
 
-    <title>{{ config('app.name', 'Advertisements') }}</title>
+    <title>
+        @hasSection('title')
+            @yield('title') | {{ config('app.name', 'Advertisements') }}
+        @else
+            {{ config('app.name', 'Advertisements') }}
+        @endif
+    </title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
