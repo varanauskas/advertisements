@@ -66,7 +66,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <main class="container my-3">
         @if (session('status'))
             <div class="alert alert-primary" role="alert">
                 {{ session('status') }}
@@ -78,7 +78,7 @@
             </div>
         @endif
         @yield('content')
-    </div>
+    </main>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
