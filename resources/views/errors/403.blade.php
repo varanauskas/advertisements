@@ -3,7 +3,7 @@
 @push('meta')
     <meta name="robots" content="noindex" />
 @endpush
-@section('title', 'Login')
+@section('title', 'Unauthorized')
 
 @section('content')
     <h1>Error 403</h1>
